@@ -13,5 +13,5 @@
 }
 
 .scale-animation {
-  animation: scaleAnimation 3s infinite; /* Adjust duration and infinite loop */
+  animation: scaleAnimation 3s infinite;
 }

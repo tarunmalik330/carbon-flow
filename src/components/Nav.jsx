@@ -37,12 +37,12 @@ const Nav = () => {
                 </li>
               ))}
               <li className="lg:hidden block">
-                <button className="text-white capitalize font-semibold text-base leading-normal py-[14px] px-6 rounded-full border border-solid border-light-green">
+                <button className="text-white capitalize font-semibold text-base leading-normal py-[14px] px-6 rounded-full border border-solid border-light-green hover:bg-light-green transition-colors ease-linear duration-300">
                   Contact Us
                 </button>
               </li>
             </ul>
-            <button className="lg:block hidden text-white capitalize font-semibold text-base leading-normal py-[14px] px-6 rounded-full border border-solid border-light-green">
+            <button className="lg:block hidden text-white capitalize font-semibold text-base leading-normal py-[14px] px-6 rounded-full border border-solid border-light-green hover:bg-light-green transition-colors ease-linear duration-300">
               Contact Us
             </button>
             <div

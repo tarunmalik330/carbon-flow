@@ -11,7 +11,7 @@ const Hero = () => {
         class="absolute font-light group text-sm text-white hidden -rotate-90 bottom-[140px] left-[-56px] uppercase tracking-[11px] xl:flex items-center gap-[17px] z-10"
         href="/"
       >
-        <span class="group-hover:top-0 absolute -left-8 duration-200 rotate-90">
+        <span class="group-hover:-left-[30px] transition-all ease-linear duration-300 top-0 absolute -left-8  rotate-90">
           <ScrolldownArrow />
         </span>
         Scroll Down
@@ -28,7 +28,7 @@ const Hero = () => {
             without breaking the bank by using Satellite and Predictive AI.
             These give unparalleled way to measure carbon credit.
           </p>
-          <div className="max-w-[270px] border border-solid border-light-green p-3 flex justify-center items-center rounded-full gap-[11px] lg:mb-[38px] mb-6 min-[850px]:mx-0 mx-auto">
+          <div className="max-w-[270px] border border-solid border-light-green hover:bg-light-green transition-colors ease-linear duration-300 p-3 flex justify-center items-center rounded-full gap-[11px] lg:mb-[38px] mb-6 min-[850px]:mx-0 mx-auto">
             <p className="text-white font-semibold text-base leading-normal">
               Start Measure!
             </p>
