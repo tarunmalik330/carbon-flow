@@ -15,3 +15,47 @@
 .scale-animation {
   animation: scaleAnimation 3s infinite;
 }
+
+.preloader-container {
+  background-color: #004e3a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.stroke-animation {
+  stroke-dasharray: 1000;
+  stroke-dashoffset: 1000;
+  animation: stroke 2s ease forwards, fill 2s 2s ease forwards,
+    scale 1s 4s ease forwards;
+}
+
+.fill-animation path {
+  animation: fill 2s 2s ease forwards;
+}
+@keyframes stroke {
+  0% {
+    stroke-dashoffset: 1000;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+@keyframes fill {
+  0% {
+    fill: transparent;
+  }
+  100% {
+    fill: white;
+  }
+}
+
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.2);
+  }
+}
