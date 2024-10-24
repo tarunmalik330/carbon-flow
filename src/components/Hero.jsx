@@ -2,11 +2,20 @@ import React from "react";
 import Nav from "./Nav";
 import researchImg from "../assets/images/webp/research-img.webp";
 import bgImg from "../assets/images/png/bg-img.png";
-import { HeroImg } from "./common/Icons";
+import { HeroImg, ScrolldownArrow } from "./common/Icons";
 
 const Hero = () => {
   return (
     <div className="bg-green xl:min-h-screen min-h-[90vh] flex flex-col overflow-x-hidden">
+      <a
+        class="absolute font-light group text-sm text-white hidden -rotate-90 bottom-[140px] left-[-56px] uppercase tracking-[11px] xl:flex items-center gap-[17px] z-10"
+        href="/"
+      >
+        <span class="group-hover:top-0 absolute -left-8 duration-200 rotate-90">
+          <ScrolldownArrow />
+        </span>
+        Scroll Down
+      </a>
       <Nav />
       <div className="container mx-auto px-4 max-w-[1164px] flex-grow items-center max-[850px]:justify-center flex relative overflow-x-hidden">
         <div className="min-[850px]:pt-0 md:pt-10 sm:pt-8">
