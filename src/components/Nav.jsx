@@ -10,7 +10,7 @@ const Nav = () => {
     document.body.classList.remove("max-lg:overflow-hidden");
   }
   return (
-    <div className="py-[14px] bg-white-100">
+    <div className="py-[14px] bg-white-100 sticky top-0">
       <div className="container mx-auto px-4 xl:max-w-[1164px]">
         <div className="flex items-center justify-between">
           <a href="/">

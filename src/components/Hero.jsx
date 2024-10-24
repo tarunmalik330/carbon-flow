@@ -1,7 +1,5 @@
-
 import React from "react";
 import Nav from "./Nav";
-import Preloader from "./Preloader"; // Import Preloader
 import researchImg from "../assets/images/webp/research-img.webp";
 import bgImg from "../assets/images/png/bg-img.png";
 import { HeroImg, ScrolldownArrow } from "./common/Icons";
@@ -9,13 +7,12 @@ import { HeroImg, ScrolldownArrow } from "./common/Icons";
 const Hero = () => {
   return (
     <>
-      <Preloader /> {/* Include Preloader component */}
-      <div className="bg-green xl:min-h-screen min-h-[90vh] flex flex-col overflow-x-hidden">
+      <div className="xl:min-h-screen min-h-[90vh] flex flex-col max-w-[1920px] mx-auto overflow-hidden relative">
         <a
-          class="absolute font-light group text-sm text-white hidden -rotate-90 bottom-[140px] left-[-56px] uppercase tracking-[11px] xl:flex items-center gap-[17px] z-10"
+          className="absolute font-light group text-sm text-white hidden -rotate-90 bottom-[140px] left-[-56px] uppercase tracking-[11px] xl:flex items-center gap-[17px] z-10"
           href="/"
         >
-          <span class="group-hover:-left-[30px] transition-all ease-linear duration-300 top-0 absolute -left-8 rotate-90">
+          <span className="group-hover:-left-[30px] transition-all ease-linear duration-300 top-0 absolute -left-8 rotate-90">
             <ScrolldownArrow />
           </span>
           Scroll Down
@@ -50,11 +47,13 @@ const Hero = () => {
             />
           </div>
         </div>
-        <div className="min-[850px]:absolute right-0 xl:bottom-0 bottom-[10%] flex justify-center min-[850px]:pt-0 sm:pt-7">
-          <HeroImg
-            bgImg={bgImg}
-            className="xl:w-[846px] lg:w-[650px] md:w-[550px] sm:w-[420px] w-[340px] xl:h-[708px]"
-          />
+        <div className="overflow-hidden">
+          <div className="min-[850px]:absolute 2xl:right-0 xl:-right-[7%] lg:-right-[6%] right-0 bottom-0 flex justify-center min-[850px]:pt-0 sm:pt-7">
+            <HeroImg
+              bgImg={bgImg}
+              className="xl:w-[846px] lg:w-[650px] md:w-[550px] sm:w-[420px] w-[340px] xl:h-[708px] max-w-full"
+            />
+          </div>
         </div>
       </div>
     </>

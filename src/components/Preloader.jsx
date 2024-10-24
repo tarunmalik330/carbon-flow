@@ -1,17 +1,6 @@
-import React, { useEffect } from "react";
+import React from "react";
 
 const Preloader = () => {
-  useEffect(() => {
-    const timeout = setTimeout(() => {
-      const preloader = document.getElementById("preloader");
-      if (preloader) {
-        preloader.style.display = "none";
-      }
-    }, 5000);
-
-    return () => clearTimeout(timeout);
-  }, []);
-
   return (
     <div
       id="preloader"
