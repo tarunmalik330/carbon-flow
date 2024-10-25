@@ -1,9 +1,11 @@
 import "./App.css";
 import CarbonTimer from "./components/CarbonTimer";
 import { useEffect, useState } from "react";
-
 import Hero from "./components/Hero";
 import Preloader from "./components/Preloader";
+import AOS from "aos";
+import "aos/dist/aos.css";
+import Aos from "aos";
 
 function App() {
   // -------------------preloader------------------------
@@ -16,6 +18,14 @@ function App() {
       setScreenLoading(false);
     }, 3000);
   }, []);
+  // -----------------------Aos-------------------------
+  useEffect(() => {
+    AOS.init({
+      once: true,
+      duration: 1200,
+    });
+    Aos.refresh();
+  });
   return (
     <>
       {screenLoading ? (
@@ -23,7 +33,7 @@ function App() {
       ) : (
         <div className="!overflow-hidden">
           <Hero />
-          <CarbonTimer />
+          {/* <CarbonTimer /> */}
         </div>
       )}
     </>
