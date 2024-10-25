@@ -59,3 +59,34 @@
     transform: scale(1.2);
   }
 }
+@keyframes zoomOut {
+  0% {
+    transform: scale(1.2); /* Start zoomed in */
+  }
+  100% {
+    transform: scale(1); /* End at normal scale */
+  }
+}
+
+.scale-animation {
+  animation: zoomOut 1.5s ease-out forwards; /* Adjust duration as needed */
+}
+.hero-img-clipPath {
+  -webkit-mask-image: url(./assets/images/svg/hero-img-vector.svg);
+  mask-image: url(./assets/images/svg/hero-img-vector.svg);
+  -webkit-mask-size: 100%;
+  mask-size: 100%;
+  -webkit-mask-repeat: no-repeat;
+  mask-repeat: no-repeat;
+}
+
+.bg-hero-img {
+  background-image: url(./assets/images/png/bg-img.png);
+  animation: heroImgScale 2s ease-in-out forwards;
+}
+
+@keyframes heroImgScale {
+  100% {
+    transform: scale(1.1);
+  }
+}

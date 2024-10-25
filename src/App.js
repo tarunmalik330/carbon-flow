@@ -1,4 +1,5 @@
 import "./App.css";
+import CarbonTimer from "./components/CarbonTimer";
 import { useEffect, useState } from "react";
 
 import Hero from "./components/Hero";
@@ -22,6 +23,7 @@ function App() {
       ) : (
         <div className="!overflow-hidden">
           <Hero />
+          <CarbonTimer />
         </div>
       )}
     </>
